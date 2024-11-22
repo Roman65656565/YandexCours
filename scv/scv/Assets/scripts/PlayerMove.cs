@@ -22,7 +22,7 @@ public class PlayerMove : MonoBehaviour
         {
             Vector3 newPosition = transform.position + transform.forward * Time.deltaTime * _speed;
 
-            newPosition.x = Mathf.Clamp(newPosition.x, -9.5f, 9.5f);
+            newPosition.x = Mathf.Clamp(newPosition.x, -3.5f, 3.5f);
             transform.position = newPosition;
 
             float deltax = Input.mousePosition.x - _oldMousePositionx;
